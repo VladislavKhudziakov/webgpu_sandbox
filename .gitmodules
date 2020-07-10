@@ -1,0 +1,15 @@
+[submodule "third/CMakeRust"]
+	path = third/CMakeRust
+	url = https://github.com/Devolutions/CMakeRust.git
+[submodule "third/glfw"]
+	path = third/glfw
+	url = https://github.com/glfw/glfw
+[submodule "third/glm"]
+	path = third/glm
+	url = https://github.com/g-truc/glm
+[submodule "third/glslang"]
+	path = third/glslang
+	url = https://github.com/KhronosGroup/glslang
+[submodule "third/wgpu-native"]
+	path = third/wgpu-native
+	url = https://github.com/gfx-rs/wgpu-native
