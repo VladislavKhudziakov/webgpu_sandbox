@@ -19,7 +19,8 @@ enable_language(Rust)
 include(CMakeCargo)
 
 file(TOUCH ${CMAKE_CURRENT_LIST_DIR}/third/wgpu-native/CMakeLists.txt)
-file(WRITE ${CMAKE_CURRENT_LIST_DIR}/third/wgpu-native/CMakeLists.txt "cargo_build(NAME \"wgpu-native\")")
+file(READ ${CMAKE_CURRENT_LIST_DIR}/wgpuCmakeSources.txt WGPU_CMAKE)
+file(WRITE ${CMAKE_CURRENT_LIST_DIR}/third/wgpu-native/CMakeLists.txt ${WGPU_CMAKE})
 
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third/glfw)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third/glslang)
