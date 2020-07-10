@@ -1,11 +1,17 @@
 #include <iostream>
 
-#include <wgpu.h>
-
 #include <window.hpp>
 #include <shader_compiler.hpp>
 
 #include <GLFW/glfw3.h>
+
+#ifdef __cplusplus
+extern "C"
+{
+#include <wgpu.h>
+}
+#endif
+
 
 int main()
 {
