@@ -13,3 +13,6 @@
 [submodule "third/wgpu-native"]
 	path = third/wgpu-native
 	url = https://github.com/gfx-rs/wgpu-native
+[submodule "third/stb"]
+	path = third/stb
+	url = https://github.com/nothings/stb.git

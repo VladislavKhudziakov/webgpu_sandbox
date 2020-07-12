@@ -26,7 +26,10 @@ add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third/glfw)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third/glslang)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third/wgpu-native)
 
-set(APPLE_FRAMEWORKS "-framework Cocoa" "-framework CoreVideo" "-framework IOKit" "-framework QuartzCore" "-framework Metal")
+if(APPLE)
+    set(APPLE_FRAMEWORKS "-framework Cocoa" "-framework CoreVideo" "-framework IOKit" "-framework QuartzCore" "-framework Metal")
+endif()
+
 
 target_link_libraries(
         wgpu_sandbox
